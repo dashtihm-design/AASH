@@ -71,5 +71,5 @@ if st.session_state.show_button:
             st.session_state.show_button = False
 
 # ------------------ FINAL MESSAGE ------------------
-if st.session_state.count >= 4:
+if st.session_state.count == 4:
     st.success("اشتر اش من الجمعيه ASH")
