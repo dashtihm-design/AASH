@@ -1,5 +1,6 @@
 import streamlit as st
 import random
+import re
 
 # ------------------ PAGE CONFIG ------------------
 st.set_page_config(
@@ -58,8 +59,17 @@ if st.session_state.show_button:
         st.session_state.count += 1
 
         if st.session_state.count < 4:
+            text = random.choice(choices)
+        
+            url = re.search(r'(https?://\S+)', text).group(1)
+            name = text.replace(url, '').strip()
+        
             st.markdown(
-                f"<div class='result-box'>{random.choice(choices)}</div>",
+                f"""
+                <div class='result-box'>
+                    <a href="{url}" target="_blank">{name}</a>
+                </div>
+                """,
                 unsafe_allow_html=True
             )
 
