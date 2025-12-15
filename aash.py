@@ -23,10 +23,37 @@ st.title("AASH / عادي أي شي")
 st.subheader("يحلك المشكلة إذا متوهق وما تدري شنو تاكل")
 
 choices = [
-    "Solo Napultina",
-    "Barba",
-    "Elevation",
-    "Pick"
+    "Swaikhat",
+    "Agnii",
+    "Amman Bhelpuri",
+    "Ghadeer Al Bahrain",
+    "Al Sayed Lebanese Restaurant",
+    "Tampopo - Ramen Shop",
+    "Meme's Curry",
+    "Naranj",
+    "Elamigos Restaurant Ras",
+    "Midar",
+    "Cantina",
+    "San Ristorante",
+    "Agnii (The Avenues)",
+    "Copper Chimney - Indian Restaurant",
+    "Matbakhi by Sawsan",
+    "Principale Ristorante Di Nino",
+    "Assaha Restaurant",
+    "The Sandwich Shop",
+    "Seoulian",
+    "SOLO Pizza Napulitana",
+    "Zlatni Juli",
+    "Vigonovo",
+    "Tekka Lumee",
+    "Pinolo Ristorante",
+    "Ori Omakase Sushi",
+    "BARBA",
+    "San Opera",
+    "YUKAI",
+    "Giulia by Vigonovo",
+    "Folio Bistro & Bakery",
+    "Wok n roll"
 ]
 
 # ------------------ BUTTON LOGIC ------------------
