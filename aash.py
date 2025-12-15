@@ -1,7 +1,7 @@
 import streamlit as st
 import random
 import re
-from restaurant list.py import choices
+from restaurant list import choices
 
 # ------------------ PAGE CONFIG ------------------
 st.set_page_config(
