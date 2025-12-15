@@ -58,15 +58,15 @@ if st.session_state.show_button:
     if st.button("اختيار عشوائي", use_container_width=True):
         st.session_state.count += 1
 
-        if st.session_state.count < 3:
+        if st.session_state.count < 4
             st.markdown(
                 f"<div class='result-box'>{random.choice(choices)}</div>",
                 unsafe_allow_html=True
             )
 
-        if st.session_state.count == 3:
+        if st.session_state.count == 4:
             st.session_state.show_button = False
 
 # ------------------ FINAL MESSAGE ------------------
-if st.session_state.count == 3:
+if st.session_state.count == 4:
     st.success("اشتر اش من الجمعيه ASH")
