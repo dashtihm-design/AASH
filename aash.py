@@ -15,9 +15,6 @@ if "count" not in st.session_state:
 if "show_button" not in st.session_state:
     st.session_state.show_button = True
 
-if "dark_mode" not in st.session_state:
-    st.session_state.dark_mode = False
-
 # ------------------ APP CONTENT ------------------
 st.title("AASH / عادي أي شي")
 st.subheader("يحلك المشكلة إذا متوهق وما تدري شنو تاكل")
@@ -61,13 +58,13 @@ if st.session_state.show_button:
     if st.button("اختيار عشوائي", use_container_width=True):
         st.session_state.count += 1
 
-        if st.session_state.count < 4:
+        if st.session_state.count < 3:
             st.markdown(
                 f"<div class='result-box'>{random.choice(choices)}</div>",
                 unsafe_allow_html=True
             )
 
-        if st.session_state.count >= 3:
+        if st.session_state.count == 3:
             st.session_state.show_button = False
 
 # ------------------ FINAL MESSAGE ------------------
