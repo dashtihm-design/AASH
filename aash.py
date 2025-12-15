@@ -72,4 +72,5 @@ if st.session_state.show_button:
 
 # ------------------ FINAL MESSAGE ------------------
 if st.session_state.count >= 3:
-    st.success("ASH")
+    st.success("اشتر اش من الجمعيه
+    ASH")
