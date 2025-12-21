@@ -28,11 +28,16 @@ if st.session_state.show_button:
         if st.session_state.count < 4:
             choice = random.choice(choices)
 
+            # ---- SAFETY CHECK ----
+            if not isinstance(choice, dict):
+                st.error("restaurant_list.py is not updated correctly")
+                st.stop()
+
             with st.container(border=True):
                 st.markdown(f"## 🍽️ {choice['name']}")
                 st.markdown(f"[📍 فتح الموقع في Google Maps]({choice['map_url']})")
 
-                # ---- MAP ----
+                # ---- EMBED MAP ----
                 st.components.v1.iframe(
                     choice["embed_url"],
                     height=300,
@@ -40,7 +45,7 @@ if st.session_state.show_button:
                 )
 
                 # ---- IMAGES ----
-                if choice["images"]:
+                if choice.get("images"):
                     st.image(
                         choice["images"],
                         use_container_width=True
@@ -52,4 +57,3 @@ if st.session_state.show_button:
 # ------------------ FINAL MESSAGE ------------------
 if st.session_state.count == 4:
     st.success("اشتر اش من الجمعيه ASH")
-
