@@ -1,13 +1,3 @@
-import streamlit as st
-import random
-from restaurant_list import choices
-
-# ------------------ PAGE CONFIG ------------------
-st.set_page_config(
-    page_title="AASH",
-    layout="centered",
-    initial_sidebar_state="collapsed"
-)
 #------------------- MAP SHAPE-----------------------
 
 import streamlit as st
